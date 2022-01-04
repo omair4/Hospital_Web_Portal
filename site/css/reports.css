@@ -1,0 +1,29 @@
+.pie{
+	box-sizing: border-box;
+	float:left;
+	width: 32%;
+}
+
+
+.lockandhot-container{
+	background: #c8d8de;
+	min-height: 200px;
+	min-width: 300px;
+	width:35%;
+	margin: 20px 20px 10px 0px;
+	border-radius: 5px;
+}
+
+.lockandhot{
+	font-weight: bold;
+	font-size: 1.2em;
+	border-color: red;
+	border: 2px red	solid;
+	background-color: #587d8a;
+	max-width: 50px;
+	max-height: 50px;
+	margin: 20px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}

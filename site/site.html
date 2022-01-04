@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/login-tabs.css">
+	<script type="text/javascript">
+		function openPage(pageName, elmnt, color) {
+  			// Hide all elements with class="tabcontent" by default */
+  			var i, tabcontent, tablinks;
+  			tabcontent = document.getElementsByClassName("tabcontent");
+  			for (i = 0; i < tabcontent.length; i++) {
+			    tabcontent[i].style.display = "none";
+			  }
+
+		  // Remove the background color of all tablinks/buttons
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+    			tablinks[i].style.backgroundColor = "";
+			}
+
+		  // Show the specific tab content
+			document.getElementById(pageName).style.display = "block";
+
+		 // Add the specific color to the button used to open the tab content
+			elmnt.style.backgroundColor = color;
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+
+</head>
+<body>
+<div id="login-box">
+	<div id="tabs">
+		<button class="tablink" onclick="openPage('Admin',this,'#AA32FA')">Admin</button>
+		<button class="tablink" onclick="openPage('Doctor',this,'#AA32FA')">Doctor</button>
+		<button class="tablink" onclick="openPage('Patient',this,'#AA32FA')">Patient</button>
+	</div>
+	<form action="auth.php" method="POST">
+	<div id="login-content">
+	<div id="Admin" class="tabcontent">
+		
+			<input class="in"  type="text" name="u_name_admin" align="center" placeholder="Username">
+		
+			<input class="in" type="password" name="pass_admin" align="center" placeholder="Password">
+		
+		
+			<input class="but" type="submit" name="admin-login" value="Login" align="center" />
+		
+		
+	</div>
+
+	<div id="Doctor" class="tabcontent">
+		<input class="in"  type="text" name="u_name_doctor" align="center" placeholder="Username">
+		
+			<input class="in" type="password" name="pass_doctor" align="center" placeholder="Password">
+		
+		
+			<input class="but" type="submit" name="doctor-login" value="Login" align="center" />
+		
+		
+	</div>
+
+	<div id="Patient" class="tabcontent">
+		<input class="in"  type="text" name="u_name_patient" align="center" placeholder="Username">
+		
+			<input class="in" type="password" name="pass_patient" align="center" placeholder="Password">
+		
+		
+			<input class="but" type="submit" name="patient-login" value="Login" align="center" />
+		
+	</div>
+	</div>
+</form>
+</div>
+
+
+</body>
+</html>

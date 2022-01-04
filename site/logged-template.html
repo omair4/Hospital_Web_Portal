@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logged</title>
+	<link rel="stylesheet" type="text/css" href="css/logged-tabs.css">
+	<script type="text/javascript">
+		function openPage(pageName, elmnt, color) {
+  			// Hide all elements with class="tabcontent" by default */
+  			var i, tabcontent, tablinks;
+  			tabcontent = document.getElementsByClassName("tabcontent");
+  			for (i = 0; i < tabcontent.length; i++) {
+			    tabcontent[i].style.display = "none";
+			  }
+
+		  // Remove the background color of all tablinks/buttons
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+    			tablinks[i].style.backgroundColor = "";
+			}
+
+		  // Show the specific tab content
+			document.getElementById(pageName).style.display = "block";
+
+		 // Add the specific color to the button used to open the tab content
+			elmnt.style.backgroundColor = color;
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+	<script type="text/javascript">
+		function logout(){
+			window.location.href= "site.html";
+
+
+		}
+	</script>
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo"></div>
+		<div id="logo-text"> FAST-NUCES Hospital </div>
+		<div id="logout-div">
+			<button id="logout-btn" onclick="logout()">Logout</button>
+		</div>
+
+	</div>
+
+
+
+	<div id="tabs">
+		<div>
+			<button class="tablink" onclick="openPage('Dashboard',this,'#AA32FA')">Dashboard</button>
+		</div>
+		<div>
+			<button class="tablink" onclick="openPage('Doctor',this,'#AA32FA')">Doctors</button>
+		</div>
+		<div>
+			<button class="tablink" onclick="openPage('Resources',this,'#AA32FA')">Resources</button>
+		</div>
+		<div>
+			<button class="tablink" onclick="openPage('Patients',this,'#AA32FA')">Patients</button>
+		</div>
+		<div>
+			<button class="tablink" onclick="openPage('Reports',this,'#AA32FA')">Reports</button>
+		</div>
+		<div>
+			<button class="tablink" onclick="openPage('Acct-mngmt',this,'#AA32FA')">Account Managment</button>
+		</div>
+		
+	</div>
+
+
+	<div id="content-div">
+		<div id="Dashboard" class="tabcontent">
+				Dashboard content
+		</div>
+
+		<div id="Doctor" class="tabcontent">
+				Doctor content
+		</div>
+
+		<div id="Resources" class="tabcontent">
+				Resources content
+		</div>
+
+		<div id="Patients" class="tabcontent">
+				Patient content
+		</div>
+
+		<div id="Reports" class="tabcontent">
+				Report content
+		</div>
+
+		<div id="Acct-mngmt" class="tabcontent">
+				Account Managment content
+		</div>
+
+
+	</div>
+
+</body>
+</html>

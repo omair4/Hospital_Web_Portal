@@ -1,0 +1,91 @@
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 32%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+body{
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#Admin {
+  background-color: white;
+}
+#Doctor {
+  background-color: white;
+
+}
+#Patient {
+  background-color: white;
+}
+
+.tabcontent{
+  border-radius: 25px;
+}
+
+.tablink{
+  border-radius: 25px;
+  margin-right: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+ #login-box{
+  box-sizing: border-box;
+  padding:30%;
+  padding-top: 10%;
+ }
+
+ #login-content{
+  margin-top: 60px;
+ }
+
+.in{
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 15px;
+ }
+
+ .but{
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  border: 0;
+  align-content: center;
+  width:35%;
+  margin-left: 30%;
+  padding: 10px 11px 12px 13px;
+ }
+
